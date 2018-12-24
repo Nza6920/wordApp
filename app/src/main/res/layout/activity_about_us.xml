@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.loginsystem.activity.AboutUsActivity"
+    android:background="#e6e6e6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:padding="8dp">
+
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:background="#000"
+            android:onClick="backToHome"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="95dp"
+            android:paddingTop="2dp"
+            android:text="关于我们"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:src="@drawable/im_logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="背单词"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="版本"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1.0.0"
+            android:textSize="22sp"
+            android:textColor="#bfbfbf"
+            android:padding="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="版本更新"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="当前已经是最新版本"
+            android:textSize="20sp"
+            android:textColor="#bfbfbf"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

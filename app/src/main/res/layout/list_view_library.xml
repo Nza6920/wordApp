@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/id_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:text="四级精选1"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:padding="8dp"
+        android:layout_weight="0.49" />
+    <TextView
+        android:id="@+id/id_textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="单词数:"
+        android:textAlignment="viewEnd"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:padding="8dp"
+        android:layout_weight="0.60" />
+
+    <TextView
+        android:id="@+id/id_textView_count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="72"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:padding="8dp" />
+</LinearLayout>

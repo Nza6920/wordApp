@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e6e6">
+
+    <!-- 标签栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="8dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:background="#fff"
+            android:onClick="backToHome"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/ic_back_light" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.27"
+                android:paddingTop="2dp"
+                android:text="英文选词"
+                android:textAlignment="viewEnd"
+                android:textColor="#515151"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/id_textView_reviewByEn_currentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="22sp"
+                android:textColor="#515151"
+                android:padding="2dp"
+                android:textAlignment="viewStart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="22sp"
+                android:textColor="#515151"
+                android:padding="2dp"
+                android:textAlignment="viewStart" />
+            <TextView
+                android:id="@+id/id_textView_reviewByEn_totalCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:textSize="22sp"
+                android:textColor="#515151"
+                android:padding="2dp"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 单词翻译 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/id_textView_reviewByEn_translation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:paddingBottom="20dp"
+            android:text="Apple"
+            android:textColor="#000"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <!-- 按钮1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button4"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="bottom"
+        android:layout_weight="0.01">
+        <Button
+            android:id="@+id/id_button_reviewByEn_contentButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.10"
+            android:background="@null"
+            android:text="n.苹果"
+            android:paddingLeft="40dp"
+            android:textAllCaps="false"
+            android:textSize="22dp"
+            android:textColor="#707070"
+            android:onClick="contentButton1" />
+        <ImageView
+            android:id="@+id/id_imageView_reviewByEn_yesOrNo1"
+            android:layout_width="0dp"
+            android:layout_weight="0.145"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_no"/>
+
+    </LinearLayout>
+
+    <!-- 按钮2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button4"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="bottom"
+        android:layout_weight="0.01">
+
+        <Button
+            android:id="@+id/id_button_reviewByEn_contentButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.10"
+            android:background="@null"
+            android:onClick="contentButton2"
+            android:paddingLeft="40dp"
+            android:text="n.苹果"
+            android:textAllCaps="false"
+            android:textColor="#707070"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/id_imageView_reviewByEn_yesOrNo2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.145"
+            android:background="@null"
+            android:src="@drawable/ic_no" />
+
+    </LinearLayout>
+
+    <!-- 按钮3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button4"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="bottom"
+        android:layout_weight="0.01">
+        <Button
+            android:id="@+id/id_button_reviewByEn_contentButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.10"
+            android:background="@null"
+            android:text="n.苹果"
+            android:paddingLeft="40dp"
+            android:textAllCaps="false"
+            android:textSize="22dp"
+            android:textColor="#707070"
+            android:onClick="contentButton3"/>
+        <ImageView
+            android:id="@+id/id_imageView_reviewByEn_yesOrNo3"
+            android:layout_width="0dp"
+            android:layout_weight="0.145"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_no"/>
+
+    </LinearLayout>
+
+    <!-- 按钮4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button4"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="bottom"
+        android:layout_weight="0.01">
+
+        <Button
+            android:id="@+id/id_button_reviewByEn_contentButton4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.10"
+            android:background="@null"
+            android:text="n.苹果"
+            android:paddingLeft="40dp"
+            android:textAllCaps="false"
+            android:textSize="22dp"
+            android:textColor="#707070"
+            android:onClick="contentButton4"/>
+        <ImageView
+            android:id="@+id/id_imageView_reviewByEn_yesOrNo4"
+            android:layout_width="0dp"
+            android:layout_weight="0.145"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/ic_no"/>
+
+    </LinearLayout>
+
+    <!-- 底部按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="bottom"
+        android:layout_weight="0.01">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:background="@drawable/bg_button3"
+            android:text="加入生词本"
+            android:textSize="12dp"
+            android:textColor="#515151"
+            android:onClick="addToUnskill"/>
+
+    </LinearLayout>
+</LinearLayout>

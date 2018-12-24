@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.loginsystem.fragment.HomeFragment"
+    android:orientation="vertical"
+    android:background="#e6e6e6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="当前在背"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/id_button_selectLibrary"
+                android:layout_width="102dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_button2"
+                android:onClick="selectLibrary"
+                android:text="换本书背" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/im_book" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.12"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_textView_libraryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.48"
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom"
+                    android:text="四级精选1"
+                    android:textColor="#000"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.53"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.51"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:text="词汇量:"
+                        android:textSize="20sp"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/id_textView_wordCount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.51"
+                        android:paddingTop="10dp"
+                        android:text="72"
+                        android:textSize="20sp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_button"
+            android:text="开始练习"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:onClick="startPractice"
+            android:layout_weight="0.07" />
+    </LinearLayout>
+</FrameLayout>
